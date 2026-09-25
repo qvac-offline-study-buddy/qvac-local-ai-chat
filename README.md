@@ -22,16 +22,18 @@ Clone the repository:
 ```bash
 git clone https://github.com/qvac-offline-study-buddy/qvac-local-ai-chat.git
 cd qvac-local-ai-chat
+```
 ## Run
-
 Install the dependencies:
 
 ```bash
 npm install
+```
 Start the application:
 
 ```bash
 npm start
+```
 Then open the local URL provided by the application.
 
 ## QVAC Usage
