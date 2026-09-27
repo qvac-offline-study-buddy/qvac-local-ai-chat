@@ -1,35 +1,17 @@
-const {
-  loadModel,
-  LLAMA_3_2_1B_INST_Q4_0,
-  completion,
-  unloadModel
-} = await import("@qvac/sdk");
-
-console.log("Loading QVAC model...");
-
-const modelId = await loadModel({
-  modelSrc: LLAMA_3_2_1B_INST_Q4_0,
-  onProgress: (p) => {
-    console.log(`Downloading: ${p.percentage.toFixed(0)}%`);
+{
+  "name": "qvac-study-buddy",
+  "version": "1.0.0",
+  "description": "A local AI study assistant built with the QVAC SDK.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.17.0",
+    "npm": ">=10.9.0"
+  },
+  "dependencies": {
+    "@qvac/sdk": "0.20.0"
   }
-});
-
-console.log("Model loaded!");
-
-const result = completion({
-  modelId,
-  history: [
-    {
-      role: "user",
-      content: "Give me a short introduction to QVAC local AI."
-    }
-  ],
-  stream: true
-});
-
-for await (const token of result.tokenStream) {
-  process.stdout.write(token);
 }
-
-console.log("\n\nDone!");
-await unloadModel({ modelId });
