@@ -3,7 +3,6 @@
 A local AI study assistant built with the QVAC SDK. It lets students ask questions and get answers using local AI inference.
 
 ## Features
-## Features
 
 - Study-focused local AI assistant
 - Ask questions and get answers on your phone
