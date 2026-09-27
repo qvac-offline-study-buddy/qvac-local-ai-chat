@@ -1,17 +1,11 @@
-{
-  "name": "qvac-study-buddy",
-  "version": "1.0.0",
-  "description": "A local AI study assistant built with the QVAC SDK.",
-  "type": "module",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=22.17.0",
-    "npm": ">=10.9.0"
-  },
-  "dependencies": {
-    "@qvac/sdk": "0.20.0"
-  }
+export function buildStudyPrompt(question, materials = "") {
+  return `You are QVAC Study Buddy, a helpful local AI study assistant.
+
+Study materials:
+${materials || "No study materials provided."}
+
+Student question:
+${question}
+
+Answer clearly and simply. Use the study materials when relevant.`;
 }
