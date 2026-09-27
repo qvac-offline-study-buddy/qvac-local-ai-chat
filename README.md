@@ -38,7 +38,7 @@ npm start
 ```
 Then open the local URL provided by the application.
 
-## QVAC Usage
+
 ## QVAC Usage
 
 QVAC Study Buddy uses the QVAC SDK to load a local AI model with `loadModel()` and generate answers with `completion()`. The app builds a study-focused prompt from the student's question and optional study materials.
