@@ -1,13 +1,15 @@
-# QVAC Local AI Chat
+# QVAC Study Buddy
 
-A simple local AI chat application built with the QVAC SDK. It loads a local AI model and generates responses using QVAC's `loadModel()` and `completion()` APIs.
+A local AI study assistant built with the QVAC SDK. It lets students ask questions and get answers using local AI inference.
 
 ## Features
+## Features
 
-- Local AI chat
-- Model loading with QVAC
-- AI text completion
-- Simple chat interface
+- Study-focused local AI assistant
+- Ask questions and get answers on your phone
+- Optional study materials for additional context
+- Local model inference with QVAC
+- Simple QVAC Study Buddy interface
 
 ## Requirements
 
@@ -37,10 +39,12 @@ npm start
 Then open the local URL provided by the application.
 
 ## QVAC Usage
+## QVAC Usage
 
-This application uses the QVAC SDK to load a local AI model with `loadModel()` and generate responses with `completion()`.
+QVAC Study Buddy uses the QVAC SDK to load a local AI model with `loadModel()` and generate answers with `completion()`. The app builds a study-focused prompt from the student's question and optional study materials.
+
 
 ## Project
 
-QVAC Local AI Chat is a simple chat application for interacting with a locally loaded AI model.
+QVAC Study Buddy is a local AI study assistant for students. It uses the QVAC SDK to load a local AI model and generate study-focused answers from questions and optional study materials.
 
